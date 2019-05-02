@@ -1,0 +1,4 @@
+green main : 336633
+green second : 4CAF50
+white
+faded white : F2F2F2

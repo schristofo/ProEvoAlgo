@@ -1,0 +1,70 @@
+<!doctype html>
+
+<html lang="en-US">
+
+  <head>
+    <title>ProEvolAlgo</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name = "description" content = "" />
+    <meta name = "author"  content = "Savvas Christoforidis" />
+    <meta name = "robots" content = "noindex, nofollow">
+    <meta name = "keywords" content="">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="shortcut icon" href="img/favicon.ico">
+    <script type="text/javascript" src="jscript/exelixis.js" async></script>
+  </head>
+
+  <body>
+    <header>
+        <a id="head" href="index.html" target="_self" >ProEvolAlgo</a>
+    </header>
+
+    <nav>
+      <ul class="menu">
+        <li><a class="active" href="">Home</a></li>
+        <li><a href="">Login</a></li>
+        <li><a href="">Community</a></li>
+        <li><a href="">About</a></li>
+        <li><a href="mailto: schristofo@ece.auth.gr">Contact</a></li>
+      </ul>
+    </nav>
+
+    <div>
+      <p>
+        <h3>Differential Evolution Algorithm</h3>
+        This project is a simulation of a differential evolution</br> algorithm made
+        from scratch by me. It implements HTML, CSS,</br> Javascript and machine learning
+        techniques in order to find </br>the global optimum/minimum of
+        a specific function. </br>Click the Run button to test f(x,y)=xx+yy function:
+      </p>
+    </div>
+
+    <div>
+      <form onsubmit="return run()">
+        <input type = "text" id = "genForm" maxlength = "32" placeholder="Number of generations" /></br>
+        <input type = "text" id = "mutForm" maxlength = "32" placeholder="Mutation value"/></br>
+        <input type = "text" id = "tarForm" maxlength = "32" placeholder="Maximum(+) or Minimum(-) finder" /></br></br>
+        <button id="runbtn" cursor="pointer" onclick="run(); this.disabled = true;" value="Run" />Run</button>
+        <button cursor="pointer" onclick="document.getElementById('runbtn').disabled = false; resetCanvas();" value="Reset" />Reset</button>
+      </form>
+    </div>
+
+    <canvas id="algo"></canvas>
+
+    <div>
+      <span id="score"></span></br>
+      <span id="stats"></span>
+    </div>
+
+
+    <footer>
+      <div>
+        <a title = "Made by">Savvas Christoforidis</span> |
+        <a href="mailto: schristofo@ece.auth.gr">Send Email</a>
+      </div>
+    </footer>
+
+  </body>
+
+</html>

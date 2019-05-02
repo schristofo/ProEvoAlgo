@@ -1,0 +1,157 @@
+/*fonts*/
+@font-face {
+    font-family: 'coco';
+    src: url('../fonts/coco/coco-webfont.eot');
+    src: url('../fonts/coco/coco-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/coco/coco-webfont.woff2') format('woff2'),
+         url('../fonts/coco/coco-webfont.woff') format('woff'),
+         url('../fonts/coco/coco-webfont.ttf') format('truetype'),
+         url('../fonts/coco/coco-webfont.svg#cocogoose_proregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'kabriole';
+    src: url('../fonts/kabrio/kabrio-webfont.eot');
+    src: url('../fonts/kabrio/kabrio-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/kabrio/kabrio-webfont.woff2') format('woff2'),
+         url('../fonts/kabrio/kabrio-webfont.woff') format('woff'),
+         url('../fonts/kabrio/kabrio-webfont.ttf') format('truetype'),
+         url('../fonts/kabrio/kabrio-webfont.svg#kabrio_abarthregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'sans7';
+    src: url('../fonts/sans7/sans7-webfont.eot');
+    src: url('../fonts/sans7/sans7-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/sans7/sans7-webfont.woff2') format('woff2'),
+         url('../fonts/sans7/sans7-webfont.woff') format('woff'),
+         url('../fonts/sans7/sans7-webfont.ttf') format('truetype'),
+         url('../fonts/sans7/sans7-webfont.svg#basic_sans_serif_7regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/*body div h1*/
+body {
+  background-color: #1771a7;
+  font-family: "sans7" , sans-serif;
+  text-align: center;
+  text-decoration: none;
+  color: #FFFFFF;
+}
+
+/*divs*/
+div {
+  padding: 15px;
+}
+div.deep {
+  display: inline-block;
+  background-color: #FFFFFF;
+  border-radius: 5px;
+}
+
+button {
+  color: #777777;
+  outline: none;
+  font-family: "sans7" , sans-serif;
+  font-size: 20px;
+  background-color: white;
+  border-width: thick;
+  border-color: white;
+  border-radius: 20px;
+  width: 120px;
+  height: 50px;
+  cursor: pointer;
+}
+button:active {
+  box-shadow: 0 5px #777777;
+  transform: translateY(2px);
+}
+
+
+/*links*/
+a {
+  color: white;
+  text-decoration: none;
+}
+/*head*/
+#head {
+  font-family: "coco";
+  font-size: 380%;
+}
+
+#run {
+  font-weight: bold;
+}
+
+/*horizontal menu*/
+ul.menu {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    max-width: 700px;
+    background-color: white;
+    border-radius: 12px;
+    margin-top: 0px;
+    margin-bottom: 40px;
+    margin-left: auto;
+    margin-right: auto;
+}
+li a {
+    display: flex;
+    justify-content: center;
+    margin: 3px 4px;
+    padding: 10px 16px;
+    text-decoration: none;
+    color: #777777;
+}
+li a:hover {
+    border-radius: 8px;
+    background-color: #777777;
+    color: #FFFFFF;
+}
+li a.active {
+  border-radius: 8px;
+  background-color: #777777;
+  color: #FFFFFF;
+}
+
+/*form inputs*/
+input[type=text] , select {
+  width: 30%;
+  padding: 8px 10px;
+  margin: 10px;
+  border: 2px solid #eee;
+  border-radius: 4px;
+}
+input[type=submit] {
+    color: #777777;
+    outline: none;
+    font-family: "sans7" , sans-serif;
+    font-size: 20px;
+    background-color: white;
+    border-width: thick;
+    border-color: white;
+    border-radius: 20px;
+    width: 120px;
+    height: 50px;
+    cursor: pointer;
+}
+
+
+@media screen and (max-width: 700px) {
+    ul.menu {
+      flex-direction: column;
+      width: 40%;
+      padding: 0;
+    }
+    li a {
+        display: block;
+    }
+}
